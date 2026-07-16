@@ -1,0 +1,19 @@
+---
+const links = [
+  { href: '/scrapbook', label: 'Scrapbook', symbol: '▧' },
+  { href: '/westillcare', label: 'We Still Care', symbol: '♥' },
+  { href: '/events', label: 'Events', symbol: '◷' },
+  { href: '/contact', label: 'Contact', symbol: '✉' },
+];
+---
+
+<nav class="quick-links" aria-label="Quick links">
+  <div class="container quick-links__grid">
+    {links.map((link) => (
+      <a href={link.href}>
+        <span class="quick-links__icon" aria-hidden="true">{link.symbol}</span>
+        <span>{link.label}</span>
+      </a>
+    ))}
+  </div>
+</nav>
