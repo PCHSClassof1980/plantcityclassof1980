@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="page-shell">
+    <section class="page-card">
+      <p class="eyebrow">Events</p>
+      <h1>Upcoming Gatherings</h1>
+      <p>
+        Share reunions, alumni meetups, and class milestones on this page.
+      </p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: #f8fafc;
+  }
+
+  .page-card {
+    max-width: 48rem;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2563eb;
+  }
+
+  h1 {
+    margin: 0.5rem 0 1rem;
+    color: #0f172a;
+  }
+
+  p {
+    color: #334155;
+    line-height: 1.7;
+  }
+</style>
