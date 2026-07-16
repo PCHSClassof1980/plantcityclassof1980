@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import QuickLinks from '../components/QuickLinks.astro';
+---
+
+<Layout>
+  <section class="hero">
+    <div class="container">
+      <img
+        class="hero-logo"
+        src="/images/pchs-flag.png"
+        alt="Plant City High School flag logo"
+      />
+
+      <h1>Plant City High School</h1>
+      <h2>Class of 1980</h2>
+      <p>
+        Welcome to the online home of the Plant City High School Class of 1980. We share class
+        news and memories, support classmates through our <strong>We Still Care</strong> fund, and
+        post reunion information whenever plans are underway.
+      </p>
+    </div>
+  </section>
+
+  <QuickLinks />
+
+  <section class="home-section" aria-labelledby="class-updates">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Stay connected</p>
+        <h2 id="class-updates">Class Updates</h2>
+      </div>
+
+      <div class="feature-grid">
+        <Card title="Latest News" accent="aqua">
+          <p>
+            There are no major class announcements today. Check back periodically for updates and
+            opportunities to reconnect.
+          </p>
+        </Card>
+
+        <Card title="Upcoming Events" href="/events" linkText="View events">
+          <p>
+            No reunion is currently scheduled. Future gatherings and reunion plans will be posted
+            here as soon as details are available.
+          </p>
+        </Card>
+
+        <Card title="We Still Care" href="/westillcare" linkText="Learn about the fund" accent="aqua">
+          <p>
+            Our class helps acknowledge classmates and families experiencing illness, loss, or
+            other difficult circumstances.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--aqua" aria-labelledby="scrapbook-preview">
+    <div class="container split-panel">
+      <div>
+        <p class="eyebrow">Shared memories</p>
+        <h2 id="scrapbook-preview">Reunion Scrapbook</h2>
+        <p>
+          Revisit reunions, informal gatherings, and other class activities through our collection
+          of shared Google Photos albums.
+        </p>
+        <a class="button button--orange" href="/scrapbook">Browse photo albums</a>
+      </div>
+
+      <div class="memory-card" aria-hidden="true">
+        <span>1980</span>
+        <strong>Friends. Memories. Connection.</strong>
+      </div>
+    </div>
+  </section>
+</Layout>
